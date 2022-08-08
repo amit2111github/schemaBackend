@@ -1,0 +1,29 @@
+div {
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+    background: #eee;
+    border: 2px solid;
+    border-radius: 20px;
+}
+connection {
+    border: none !important;
+    min-height: 2px;
+    min-width: 2px;
+}
+connection .i {
+    display: block;
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+}
+
+connection.b.r .i, connection.t.l .i {
+    background: linear-gradient(to top left, rgba(0, 0, 0, 0) calc(50% - 1px), rgba(0, 0, 0, 1) calc(50% - 1px), rgba(0, 0, 0, 1) calc(50% + 1px), rgba(0, 0, 0, 0) calc(50% + 1px));
+}
+
+connection.t.r .i, connection.b.l .i {
+    background: linear-gradient(to bottom left, rgba(0, 0, 0, 0) calc(50% - 1px), rgba(0, 0, 0, 1) calc(50% - 1px), rgba(0, 0, 0, 1) calc(50% + 1px), rgba(0, 0, 0, 0) calc(50% + 1px));
+}
